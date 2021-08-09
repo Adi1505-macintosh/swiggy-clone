@@ -17,11 +17,12 @@
               width="240px"
               height="100%"
             />
-            <div class="nav-btns">
-              <button class="login">Login</button>
-              <button class="signup">Sign Up</button>
-            </div>
           </div>
+          <div class="nav-btns">
+            <button class="login">Login</button>
+            <button class="signup">Sign Up</button>
+          </div>
+
           <p class="head">Cooking Gone Wrong?</p>
           <p class="sub-head">
             Order from your favourite restaurants near you.
@@ -38,7 +39,7 @@
             <button class="search-btn">FIND FOOD</button>
           </div>
           <p class="sub-head">POPULAR CITIES IN INDIA</p>
-          <div class="flex-row">
+          <div class="flex-column">
             <p class="city">Ahemdabad</p>
             <p class="city">Kolkata</p>
             <p class="city">Delhi</p>
@@ -59,6 +60,7 @@
     <section id="section-2">
       <div class="flex-row" style="justify-content: center">
         <div
+          class="mobile-width"
           style="
             width: 25%;
             display: flex;
@@ -78,6 +80,7 @@
           </p>
         </div>
         <div
+          class="big-width"
           style="
             width: 25%;
             display: flex;
@@ -97,6 +100,7 @@
           </p>
         </div>
         <div
+          class="big-width"
           style="
             width: 25%;
             display: flex;
@@ -134,17 +138,18 @@
             Order from your favourite restaurants & track on the go, with the
             all-new Swiggy App.
           </p>
-          <div class="flex-row">
+          <div class="flex-column">
             <img
               src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
               width="200px"
               height="60px"
             />
+            <br />
             <img
               src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
               width="200px"
               height="60px"
-              style="margin-left: 20px"
+              style="margin-left: 0px"
             />
           </div>
         </div>
@@ -152,22 +157,23 @@
       <div
         style="
           position: relative;
-          float: right;
+          float: left;
           width: 50%;
           display: flex;
           height: 100%;
+          flex: column;
         "
       >
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n"
-          height="500px"
-          width="400px"
+          height="400px"
+          width="300px"
         />
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
-          height="500px"
-          width="400px"
-          style="position: absolute; bottom: 0; right: 20%"
+          height="400px"
+          width="300px"
+          style="position: absolute; bottom: 0; left: -10%"
         />
       </div>
     </section>

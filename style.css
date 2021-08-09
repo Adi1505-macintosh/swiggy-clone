@@ -7,7 +7,9 @@ body {
 }
 
 #section-1 {
-  height: 500px;
+  height: 900px;
+  align-items: center;
+  align-items: stretch;
 }
 
 .f-l {
@@ -45,6 +47,7 @@ body {
   width: 60%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .login {
@@ -82,6 +85,12 @@ body {
 .flex-row {
   display: flex;
   flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
 }
 
 .search-box {
@@ -133,10 +142,17 @@ body {
   padding-right: 20px;
   color: gray;
   font-size: 18px;
+  height: 0.2px;
 }
 
 .city:nth-of-type(odd) {
   font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  #section-1 .nav-btns {
+    flex-direction: row;
+  }
 }
 
 #section-2 {
@@ -156,13 +172,39 @@ body {
   margin: 0 40px;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  #section-2 {
+    height: 550px;
+    flex-direction: column;
+  }
+
+  .section-2 .flex-row {
+    flex-direction: row;
+  }
+
+  .section-2 .mobile-width {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 #section-3 {
-  height: 500px;
+  height: 850px;
 }
 
 footer {
   background-color: black;
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: 40px;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  footer {
+    flex-direction: row;
+  }
 }
